@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+const content = document.querySelector('.content');
 const baseURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'
 const submit = document.querySelector('.button');
 const newSprite = document.createElement('img');
@@ -12,7 +12,7 @@ submit.addEventListener('click', () => {
   for(i = 1; i < randNum; ++i){
     label.innerText = `#${i}`;
     newSprite.src = `${baseURL}${i}.png`; // <---- Image source; adds pokemon sprite number
-    container.appendChild(newSprite); // <---- Appends image to container div
-    container.appendChild(label); // <---- Appends span to container div
-  }
+  };
+  content.appendChild(newSprite); // <---- Appends image to container div
+  content.appendChild(label); // <---- Appends span to container div
 })

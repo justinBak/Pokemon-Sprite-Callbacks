@@ -4,20 +4,12 @@
   box-sizing: border-box;
 }
 
-.main-content {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 20px;
-  text-align: center;
-  display: absolute;
-}
-
 .h1-container {
   height: 100px;
   display: flex;
   background-color: rgb(56,96,170);
-  border: 5px solid rgb(255,203,3);
-  position: relative;
+  border-top: 5px solid rgb(255,203,3);
+  border-bottom: 5px solid rgb(255,203,3);
   justify-content: center;
   align-items: center;
 }
@@ -30,13 +22,18 @@ h1 {
   text-transform: uppercase;
 }
 
-.pokemon {
-
+.main-container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  display: absolute;
 }
 
 .button {
   color: rgb(255,203,3);
   font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 4px solid ;
@@ -46,17 +43,7 @@ h1 {
   cursor: pointer;
 }
 
-.container {
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 20px;
-  margin-top: 50px;
-  margin-right: 5px;
-}
-
-.pokemon-img {
-  display: relative;
+.pokemon-container {
   background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
   margin: 80px auto;
   border: 10px solid rgb(255,203,3);
@@ -66,13 +53,21 @@ h1 {
   text-align: center;
 }
 
+.content {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
 img {
   margin-top: 25px;
-  width: 100%;
+  width: 110%;
 }
 
 span {
-  position: relative;
   font-family: 'Robot', sans-serif;
   font-size: 22px;
   color: rgb(255,203,3);
